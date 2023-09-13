@@ -1,0 +1,33 @@
+.result-card
+    border-radius: 2.8rem
+    display: inline-block
+    &:not(:last-child)
+        margin-right: 1rem
+    &:first-child
+        background: url(../img/resultCard/1.png), $color-orange
+        padding: 3rem 2.7rem 5.4rem 3rem
+        margin-bottom: 6rem
+    &:nth-child(2)
+        background: url(../img/resultCard/2.png), $color-orange
+        background-repeat: no-repeat
+        padding: 3rem 4.3rem 3rem 3rem
+        margin-bottom: 6rem
+    &:nth-child(2) > &_text
+        width: 29rem
+    &:nth-child(3)
+        background: url(../img/resultCard/3.png), $color-orange
+        background-repeat: no-repeat
+        padding: 3rem 3.4rem 3rem 3rem
+        margin-bottom: 6rem
+    &:nth-child(4)
+        background: url(../img/resultCard/4.png), $color-orange
+        background-repeat: no-repeat
+        padding: 3rem 3.4rem 3rem 3rem
+    &_text
+        width: 30rem
+        color: $color-white
+        font-family: Gilroy
+        font-size: 1.6rem
+        font-weight: 400
+        line-height: 24px
+        display: inline-block

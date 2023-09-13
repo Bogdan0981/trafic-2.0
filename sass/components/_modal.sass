@@ -1,0 +1,39 @@
+.modal
+    width: 100%
+    height: 100vh
+    position: fixed
+    background: url(../img/hero/Rectangle.png), #0c0c0c
+    z-index: 10
+    top: 0
+    padding: 6rem 17.6rem 9rem 17.6rem
+    overflow: hidden
+    display: none
+    animation: modalOpen 1 1s
+    &-content
+        position: relative
+    &-close
+        text-align: end
+        margin-bottom: 7rem
+        img
+            transition: all .3s
+        &:hover img
+            transform: rotate(90deg)
+            cursor: pointer
+    &-form
+        display: flex
+        flex-direction: column
+        align-items: start
+    &_input
+        width: 48rem !important
+    &_btn
+        border-radius: .4rem
+        padding: 1.7rem 8rem
+    &_img
+        position: absolute
+        top: -86rem
+        left: -64rem
+        z-index: -1
+    &__active
+        display: block
+    &__closed
+        display: none

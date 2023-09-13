@@ -1,0 +1,34 @@
+.header
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding: 1.5rem 4rem .3rem 4.3rem
+    background: rgba(0, 0, 0, 0.66)
+    backdrop-filter: blur(10px)
+    margin: 0 auto
+    width: 89%
+    border-radius: 2rem
+    margin-bottom: 7.9rem
+    z-index: 3
+    position: relative
+    &__burger
+        display: flex
+        align-items: center
+        background: transparent
+        border: none
+        cursor: pointer
+        &_text
+            color: $color-white
+            font-family: "TT Travels"
+            font-size: 2.4rem
+            font-weight: 900
+            line-height: 125%
+            letter-spacing: -0.48px
+            text-transform: uppercase
+            margin-right: 1.8rem
+            transition: all .5s
+        &:hover &_text
+            color: $color-orange
+        &:focus
+            outline: none
+                

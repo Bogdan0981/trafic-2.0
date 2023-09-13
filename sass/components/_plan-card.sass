@@ -1,0 +1,71 @@
+.plan-card
+    display: inline-block
+    padding: 2.9rem 2.8rem 5.5rem 3rem
+    border-radius: 15px
+    background: rgba(65, 65, 65, 0.60)
+    backdrop-filter: blur(4.5px)
+    position: relative
+    vertical-align: top
+    span
+        color: $color-orange
+    &:not(:last-child)
+        margin-right: 4rem
+    &_title
+        text-align: center
+    &_list
+        list-style: none
+        &__orange
+            list-style: none
+    &_listItem
+        display: flex
+        color: $color-white
+        font-family: Gilroy
+        font-size: 1.6rem
+        font-weight: 400
+        line-height: 24px
+        &:not(:last-child)
+            margin-bottom: 1.5rem
+        &:last-child
+            margin-bottom: 3.5rem
+        &::before
+            content: "-"
+            display: block
+            color:  $color-white
+            margin-right: .6rem
+        &__orange
+            display: flex
+            color: $color-orange
+            font-family: Gilroy
+            font-size: 1.6rem
+            font-weight: 400
+            line-height: 24px
+            &:not(:last-child)
+                margin-bottom: 1.6rem
+            &:last-child
+            margin-bottom: 3.5rem
+            &::before
+                content: "-"
+                display: block
+                color:  $color-orange
+                margin-right: .6rem
+    &_price
+        text-align: center
+        &__white
+            color: $color-white
+            font-family: TT Travels
+            font-size: 2.4rem
+            font-weight: 900
+            line-height: 125%
+            letter-spacing: -0.48px
+            text-transform: uppercase
+            margin-bottom: .5rem
+        &__orange
+            color: $color-orange
+            font-family: TT Travels
+            text-decoration: line-through
+            text-decoration-color: white
+            font-size: 2.4rem
+            font-weight: 900
+            line-height: 125%
+            letter-spacing: -0.48px
+            text-transform: uppercase

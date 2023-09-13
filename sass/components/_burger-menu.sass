@@ -1,0 +1,65 @@
+.burger-menu
+    width: 100%
+    height: 100vh
+    position: fixed
+    background: rgba(0, 0, 0, .8)
+    z-index: 10
+    top: 0
+    display: flex
+    justify-content: end
+    display: none
+    &__active
+        display: flex
+        animation: burgerOpen  1 1s, burgerBcg 1 2s
+    &__closed
+        animation: burgerClose 1 3s
+        display: none
+    &_content
+        padding: 3rem 4.8rem 6rem 5rem
+        background: #0c0c0c
+        width: 40%
+    &_logo
+        display: flex
+        justify-content: space-between
+        align-items: center
+        margin-bottom: 3rem
+    &_item
+        border-top: 1px solid #808080
+        padding-top: 2.5rem
+        a
+            @include text(2.4rem, TT Travels)
+            font-weight: 900
+            letter-spacing: -0.48px
+            transition: all .3s
+            &:hover
+                color: $color-orange
+                text-decoration: none
+        &:not(:last-child)
+            margin-bottom: 2rem
+        &:last-child
+            border-bottom: 1px solid #808080
+            padding-bottom: 2.5rem
+    &_items
+        margin-bottom: 5rem
+    &_contacts
+        display: flex
+        justify-content: space-between
+        align-items: center
+        &_title
+            @include text(1.6rem, Gilroy)
+        p
+            margin-bottom: 1rem
+        &_link
+            transition: all .3s
+            &:hover
+                color: $color-orange
+                text-decoration: none
+        &_select
+            display: flex
+            align-items: center
+            color: $color-white
+            font-size: 1.5rem
+            img
+                margin-right: .8rem
+            &:hover
+                cursor: pointer
